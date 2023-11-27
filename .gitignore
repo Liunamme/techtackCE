@@ -1,28 +1,24 @@
-# Игнорировать папку node_modules
-node_modules/
-
-# Игнорировать папку dist (результат сборки)
-dist/
-
-# Игнорировать временные файлы и папки
-.cache/
-temp/
+# Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Игнорировать локальные настройки проекта
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+node_modules
+dist
+dist-ssr
+*.local
 
-# Игнорировать файлы настроек WebStorm
-.idea/
-
-# Игнорировать файлы настроек VS Code
-.vscode/
-
-# Игнорировать файлы сборки
-build/
-
-# Игнорировать файлы конфигурации
-*.config.js
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
