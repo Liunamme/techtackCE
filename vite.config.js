@@ -1,11 +1,5 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "./styles/index.scss";`,
-      },
-    },
-  },
-});
+  base: 'https://Liunamme.github.io/techtackCE/',
+})

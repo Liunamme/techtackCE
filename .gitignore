@@ -1,0 +1,28 @@
+# Игнорировать папку node_modules
+node_modules/
+
+# Игнорировать папку dist (результат сборки)
+dist/
+
+# Игнорировать временные файлы и папки
+.cache/
+temp/
+*.log
+
+# Игнорировать локальные настройки проекта
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Игнорировать файлы настроек WebStorm
+.idea/
+
+# Игнорировать файлы настроек VS Code
+.vscode/
+
+# Игнорировать файлы сборки
+build/
+
+# Игнорировать файлы конфигурации
+*.config.js
