@@ -1,0 +1,29 @@
+  .button2 {
+    background-color: transparent;
+    position:relative;
+    width: 344.67px;
+    height: 62.67px;
+    border-radius: 41.78px;
+    font-family: $ManropeB;
+    font-size: 16.71px;
+    color: #5A5C61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button2::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius:41.78px; 
+    padding:2px; 
+    background:linear-gradient(to left, #AB52CE, #FE8687); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out; 
+    mask-composite: exclude; 
+  }

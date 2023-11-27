@@ -1,0 +1,241 @@
+
+.section2 {
+    position: relative;
+    width: 100%;
+    height: 498px;
+    background-color: rgba(90, 92, 97, 5%);
+    overflow: hidden;
+    &_content {
+        height: 100%;
+    }
+    &_promotion1 {
+        height: 100%;
+        padding: 0px 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        &_text {
+            width: 420px;
+            max-width: 420px;
+            height: 443px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+            padding-top: 77px;
+            h2 {
+                font-family: $ManropeEB;
+                font-size: 24px;
+                color: #5A5C61;
+                margin-bottom: 34px;
+            }
+            h3 {
+                font-family: $ManropeB;
+                font-size: 118.97px;
+                background: linear-gradient(40deg, #AB52CE 22%, #FE8687  80%);
+                -webkit-background-clip: text; /* Для поддержки веб-браузеров на основе WebKit (Chrome, Safari) */
+                color: transparent;
+                background-clip: text;
+                margin-bottom: 15px;
+            }
+            p {
+                font-family: $ManropeR;
+                font-size: 18px;
+                color: rgba(90, 92, 97, 70%);
+                width: 360px;
+                line-height: 157%;
+            }
+        }
+        img {
+            max-width: 490px;
+            width: 100%;
+        }
+    }
+    &_promotion2 {
+        display: none;
+    }
+
+}
+// АДАПТИВ
+@media (max-width: $d3) { 
+    .section2 {
+    &_promotion1 {
+            &_text {
+            width: 420px;
+            max-width: 420px;
+            min-width: 100px;
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 80px;
+            }
+            p {
+                padding: 0 20px;
+                font-size: 16px;
+            }
+        }
+        img {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+    }
+}
+
+@media (max-width: $d4) { 
+    .section2 {
+    &_promotion1 {
+        &_text {
+            h2 {
+                font-size: 15px;
+            }
+            p {
+                padding: 0 60px;
+                font-size: 14px;
+            }
+        }
+        img {
+            max-width: 300px;
+        }
+    }
+    }
+}
+@media (max-width: $d5) { 
+    .section2 {
+    &_promotion1 {
+        &_text {
+            h2 {
+                font-size: 13px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    }
+}
+
+@media (max-width: $t1) { 
+    .section2 {
+        padding-top: 63px;
+        padding-bottom: 63px;
+        height: max-content;
+        &_promotion1 {
+            display: none;
+        }
+        &_promotion2 { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 55px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                color: #5A5C61;
+                text-align: center;
+                h2 {
+                    font-family: $ManropeR;
+                    .link {
+                        font-family: $ManropeB;
+                    }
+                    font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin-bottom: 28px;
+                }
+                h3 {
+                    font-family: $ManropeB;
+                    font-size: 90px;
+                    background: linear-gradient(40deg, #AB52CE 22%, #FE8687  80%);
+                    -webkit-background-clip: text; /* Для поддержки веб-браузеров на основе WebKit (Chrome, Safari) */
+                    color: transparent;
+                    background-clip: text;
+                    margin-bottom: 33px;
+    
+                }
+                p {
+                    font-family: $ManropeR;
+                    font-size: 18px;
+                    color: rgba(90, 92, 97, 70%);
+                    width: 100%;
+                    line-height: 157%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $m1) { 
+    .section2 {
+        padding-top: 63px;
+        padding-bottom: 63px;
+        height: max-content;
+        &_promotion2 { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 55px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                color: #5A5C61;
+                text-align: center;
+                h2 {
+                    font-family: $ManropeR;
+                    .link {
+                        font-family: $ManropeB;
+                    }
+                    font-size: 19px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin-bottom: 28px;
+                }
+                h3 {
+                    font-family: $ManropeB;
+                    font-size: 60px;
+                    background: linear-gradient(40deg, #AB52CE 22%, #FE8687  80%);
+                    -webkit-background-clip: text; /* Для поддержки веб-браузеров на основе WebKit (Chrome, Safari) */
+                    color: transparent;
+                    background-clip: text;
+                    margin-bottom: 33px;
+    
+                }
+                p {
+                    font-family: $ManropeR;
+                    font-size: 14.62px;
+                    color: rgba(90, 92, 97, 70%);
+                    width: 100%;
+                    line-height: 157%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $m4) { 
+    .section2 {
+        &_promotion2 { 
+            &_text {
+                h2 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $m5) { 
+    .section2 {
+        &_promotion2 { 
+            &_text {
+                h2 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

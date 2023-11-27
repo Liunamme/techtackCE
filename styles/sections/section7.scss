@@ -1,0 +1,16 @@
+.section7 {
+    height: 173px;
+    width: 100%;
+    &_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        p {
+            font-family: $ManropeR;
+            font-size: 15px;
+            line-height: 157%;
+            text-align: center;
+        }
+    }
+}

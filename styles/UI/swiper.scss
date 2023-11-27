@@ -1,0 +1,162 @@
+// swiper.scss
+.slider {
+position: relative;
+width: 100%;
+height: 362px;
+display: flex;
+justify-content: center;
+}
+
+// КАРТОЧКА
+.splide__slide {
+    height: 362px;
+    img {
+        width: 217px;
+        height: 256px;
+        margin-bottom: 28px;
+    }
+    .member-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #5A5C61;
+        .full-name {
+            width: 204.7px;
+            height: 52.2px;
+            font-family: $ManropeEB;
+            font-size: 19px;
+            line-height: 26.1px;
+            margin-bottom: 12px;
+        }
+        .position {
+            font-family: $ManropeR;
+            font-size: 15px;
+        }
+    }
+  }
+//
+
+// СТРЕЛОЧКИ
+  .splide__arrow {
+    position: relative;
+    background-color: transparent !important;
+    color: transparent !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .splide__arrow--next {
+    right: -150px !important;
+  }
+  .splide__arrow--prev {
+    left: -150px !important;
+  }
+  .splide__arrow--next::before, .splide__arrow--prev::before {
+    content: '';
+    top: 15px;
+    width: 24px;
+    height: 2px;
+    background: #7E39A8;
+    position: absolute;
+  }
+  .splide__arrow--next::before {
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  .splide__arrow--prev::before {
+    left: 10px;
+    transform: rotate(-45deg);
+  }
+  .splide__arrow--next::after, .splide__arrow--prev::after {
+    content: '';
+    top: 31px;
+    width: 24px;
+    height: 2px;
+    background-color: #7E39A8;
+    position: absolute;
+
+  }
+  .splide__arrow--next::after {
+    right: 10px;
+    transform: rotate(-45deg);
+  }
+  .splide__arrow--prev::after {
+    left: 10px;
+    transform: rotate(45deg);
+  }
+//
+
+// ПАГИНАЦИЯ
+.splide__pagination {
+  position: absolute;
+  bottom: -40px !important;
+  gap: 4px;
+}
+.splide__pagination__page {
+  width: 10.44px !important;
+  height: 10.44px !important;
+  background-color: rgba(90, 92, 97, 15%) !important;
+}
+.splide__pagination__page.is-active {
+  background-color: rgba(90, 92, 97, 40%) !important;
+  transform: none !important;
+}
+//
+
+// АДАПТИВ
+@media (max-width: $d1) {
+  .splide__arrow--next {
+      right: -100px !important;
+    }
+  
+    .splide__arrow--prev {
+      left: -100px !important;
+    }
+}
+@media (max-width: $d2) {
+  .splide__arrow--next {
+      right: -80px !important;
+    }
+  
+    .splide__arrow--prev {
+      left: -80px !important;
+    }
+}
+@media (max-width: $d3) {
+  .splide__arrow--next {
+    right: -50px !important;
+  }
+  .splide__arrow--prev {
+    left: -50px !important;
+  }
+}
+@media (max-width: $t1) {
+  .splide__slide { 
+    &_img {
+      position: relative;
+    }
+    &_img::before, &_img::after {
+      content: '';
+      position: absolute;
+      width: 35.5px;
+      height: 35.5px;
+      z-index: 3;
+    }
+    &_img::before{
+      bottom: 53px;
+      left: 225px;
+      border-bottom: 3px solid;
+      border-left: 3px solid;
+      border-image: linear-gradient(150deg, #AB52CE 30%, #FE8687 100%);
+      border-image-slice: 1;
+  }
+  &_img::after {
+      top: 25px;
+      right: 225px;
+      border-top: 3px solid;
+      border-right: 3px solid;
+      border-image: linear-gradient(-50deg, #AB52CE 30%, #FE8687 100%);
+      border-image-slice: 1;
+  }
+  }
+  
+}

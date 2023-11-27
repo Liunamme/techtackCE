@@ -1,0 +1,55 @@
+.footer {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(90, 92, 97, 5%);
+    &_content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_socials {
+        display: flex;
+        gap: 38px;
+    }
+    &_copyright {
+        font-family: $ManropeR;
+        font-size: 14.62px;
+        color: rgb(90, 92, 97, 70%);
+    }
+}
+
+@media (max-width: $t1) { 
+    .footer {
+        height: max-content;
+        padding: 35px 0px;
+    &_content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+}
+@media (max-width: $m4) { 
+    .footer {
+        height: max-content;
+        padding: 35px 0px;
+    &_content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &_socials {
+        gap: 20px;
+    }
+    &_copyright {
+        font-size: 12px;
+    }
+}
+}

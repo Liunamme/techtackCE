@@ -1,0 +1,198 @@
+.section5 {
+    position: relative;
+    width: 100%;
+    height: 572px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    &_content {
+        position: relative;
+        height: 362px;
+        display: flex;
+        justify-content: center;
+    }
+    &_header {
+        display: none;
+    }
+    &_person {
+        width: 100%;
+        height: 100%;
+        max-width: 1173px;
+        display: flex;
+        gap: 82px;
+        &_img {
+            position: relative;
+            width: 100%;
+            max-width: max-content;
+            height: 362px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_img::before, &_img::after{
+            content: '';
+            position: absolute;
+            width: 35.5px;
+            height: 35.5px;
+            z-index: 3;
+        }
+        &_img::before{
+            bottom: 35.5px;
+            left: -17px;
+            border-bottom: 3px solid;
+            border-left: 3px solid;
+            border-image: linear-gradient(150deg, #AB52CE 30%, #FE8687 100%);
+            border-image-slice: 1;
+        }
+        &_img::after {
+            top: 35.5px;
+            right: -17.5px;
+            border-top: 3px solid;
+            border-right: 3px solid;
+            border-image: linear-gradient(-50deg, #AB52CE 30%, #FE8687 100%);
+            border-image-slice: 1;
+        }
+        &_info {
+            margin-top: 30px;
+            font-family: $ManropeR;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            h3 {//
+                font-size: 33.63px;
+                line-height: 47.7px;
+                white-space: pre-line;
+                color: #5A5C61;
+                margin-bottom: 26px;
+            }
+            h2 {
+                font-size: 20.18px;
+                line-height: 130%;
+                white-space: pre-line;
+                width: 100%;
+                max-width: 500px;
+                color: #5A5C61;
+                margin-bottom: 34px;
+            }
+            p {
+                font-size: 20.18px;
+                line-height: 130%;
+                white-space: pre-line;
+                color: rgb(90, 92, 97, 70%);
+            }
+            p:first-of-type{
+                margin-bottom: 34px;
+            }
+        }
+    }
+    &_elipse {
+        position: absolute;
+        top: -105px;
+        right: -143px;
+        width: auto;
+        z-index: -2;
+    }
+    &_pregTest {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        z-index: -2;
+    }
+}
+
+
+@media (max-width: $d4) { 
+    .section5 {
+        &_person {
+            &_info {
+                h3 {//
+                    font-size: 30px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $t1) { 
+    .section5 {
+        height: 681px;
+        &_content {
+            flex-direction: column;
+            text-align: center;
+            height: 100%;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        &_header {
+            display: block;
+            font-family: $ManropeEB;
+            font-size: 24px;
+            color: #5A5C61;
+            margin-bottom: 60px;
+            padding: 0px 50px;
+        }
+        &_person {
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            gap: 0px;
+            &_img {
+                position: relative;
+                width: 100%;
+                max-width: max-content;
+                height: 250px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &_info {
+                h3 {//
+                    font-family: $ManropeEB;
+                    font-size: 19px;
+                    line-height: 26.1px;
+                    margin-bottom: 12px;
+                }
+                h2 {
+                    font-family: $ManropeR;
+                    font-size: 15px;
+                    
+                }
+                p {
+                    font-family: $ManropeR;
+                    font-size: 15px;
+                }
+            }
+        }
+        &_pregTest {
+            display: none;
+        }
+        &_elipse {
+            width: 300px;
+            top: 10px;
+            right: -85px;
+        }
+    }
+}
+@media (max-width: $t2) { 
+    .section5 { 
+        &_header {
+        padding: 0px 30px;
+        }
+    }  
+}
+@media (max-width: $m1) { 
+    .section5 { 
+        &_header {
+            padding: 0px;
+            margin-bottom: 60px;
+            font-size: 16.71px;
+        }
+    }
+}

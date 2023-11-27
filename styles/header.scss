@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 169px;
+    .logo.desktop {
+        display: block;
+      };
+    .logo.mobile {
+        display: none;
+      }; 
+}
+// АДАПТИВ
+@media (max-width: $t1) {
+    header {
+      height: 80px;
+        .logo.desktop {
+            display: none;
+          };
+        .logo.mobile {
+          display: block;
+        };
+    }
+}  
