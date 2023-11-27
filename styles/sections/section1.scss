@@ -194,6 +194,7 @@
             margin-bottom: 20px;
             img {
                 width: max-content;
+                max-width: 200px;
                 height: 100%;
             }
         }
@@ -273,6 +274,7 @@
         height: 627px;
         &_img {
             max-height: 140px;
+            max-width: 140px;
         }
         &_info {
             h3 {
