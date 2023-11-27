@@ -56,7 +56,6 @@
     &_promotion2 {
         display: none;
     }
-
 }
 // АДАПТИВ
 @media (max-width: $d3) { 
@@ -84,7 +83,6 @@
     }
     }
 }
-
 @media (max-width: $d4) { 
     .section2 {
     &_promotion1 {
@@ -117,7 +115,6 @@
     }
     }
 }
-
 @media (max-width: $t1) { 
     .section2 {
         padding-top: 63px;
@@ -175,29 +172,11 @@
         padding-bottom: 63px;
         height: max-content;
         &_promotion2 { 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 55px;
             &_text {
-                display: flex;
-                flex-direction: column;
-                color: #5A5C61;
-                text-align: center;
                 h2 {
-                    font-family: $ManropeR;
-                    .link {
-                        font-family: $ManropeB;
-                    }
                     font-size: 19px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    margin-bottom: 28px;
                 }
                 h3 {
-                    font-family: $ManropeB;
                     font-size: 60px;
                     background: linear-gradient(40deg, #AB52CE 22%, #FE8687  80%);
                     -webkit-background-clip: text; /* Для поддержки веб-браузеров на основе WebKit (Chrome, Safari) */
@@ -207,11 +186,7 @@
     
                 }
                 p {
-                    font-family: $ManropeR;
                     font-size: 14.62px;
-                    color: rgba(90, 92, 97, 70%);
-                    width: 100%;
-                    line-height: 157%;
                 }
             }
         }

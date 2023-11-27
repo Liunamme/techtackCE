@@ -18,7 +18,7 @@
         color: rgb(90, 92, 97, 70%);
     }
 }
-
+// АДАПТИВ
 @media (max-width: $t1) { 
     .footer {
         height: max-content;
@@ -35,16 +35,6 @@
 }
 @media (max-width: $m4) { 
     .footer {
-        height: max-content;
-        padding: 35px 0px;
-    &_content {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-    }
     &_socials {
         gap: 20px;
     }

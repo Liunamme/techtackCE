@@ -17,6 +17,7 @@
         margin-bottom: 60px;
     }
 }
+// АДАПТИВ
 @media (max-width: $t1) { 
     .section4 {
         h2 {
@@ -32,7 +33,6 @@
         }
     }
 }
-
 @media (max-width: $m1) { 
     .section4 {
         h2 {
